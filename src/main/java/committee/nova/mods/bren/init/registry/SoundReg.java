@@ -10,7 +10,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class SoundReg {
     
     public static final DeferredRegister<SoundEvent> SOUND_EVENTS =
-        DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, Bren.MOD_ID);
+        DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, Bren.MODID);
     
     public static final RegistryObject<SoundEvent> ITEM_MACHINE_GUN_SHOOT = registerSoundEvents("item.machine_gun.shoot");
     public static final RegistryObject<SoundEvent> ITEM_AUTO_GUN_SHOOT = registerSoundEvents("item.auto_gun.shoot");
@@ -34,7 +34,7 @@ public class SoundReg {
 
     
     private static RegistryObject<SoundEvent> registerSoundEvents(String name){
-        return SOUND_EVENTS.register(name, () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(Bren.MOD_ID, name)));
+        return SOUND_EVENTS.register(name, () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(Bren.MODID, name)));
     }
     
     public static void register(IEventBus eventBus){
