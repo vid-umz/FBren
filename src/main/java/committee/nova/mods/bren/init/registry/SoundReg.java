@@ -6,11 +6,12 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
+import committee.nova.mods.bren.Bren;
 
 public class SoundReg {
     
     public static final DeferredRegister<SoundEvent> SOUND_EVENTS =
-        DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, Bren.MODID);
+        DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, MODID);
     
     public static final RegistryObject<SoundEvent> ITEM_MACHINE_GUN_SHOOT = registerSoundEvents("item.machine_gun.shoot");
     public static final RegistryObject<SoundEvent> ITEM_AUTO_GUN_SHOOT = registerSoundEvents("item.auto_gun.shoot");
