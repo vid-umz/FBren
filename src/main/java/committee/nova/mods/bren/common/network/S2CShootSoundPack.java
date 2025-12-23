@@ -38,7 +38,7 @@ public class S2CShootSoundPack {
             var world = client.level;
             if (world != null) {
 
-                var soundInstance = SimpleSoundInstance.forUI(SoundReg.ITEM_DISTANT_GUNFIRE, 1.0F - (world.getRandom().nextFloat() - 0.5F)/8, volume);
+                var soundInstance = SimpleSoundInstance.forUI(SoundReg.ITEM_DISTANT_GUNFIRE.get(), 1.0F - (world.getRandom().nextFloat() - 0.5F)/8, volume);
                 client.getSoundManager().play(soundInstance);
             }
         });
