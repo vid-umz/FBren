@@ -81,7 +81,7 @@ public class RevolverItem extends BulletOnlyGun {
                 player.getX(),
                 player.getY(),
                 player.getZ(),
-                SoundReg.ITEM_REVOLVER_RELOAD,
+                SoundReg.ITEM_REVOLVER_RELOAD.get(),
                 SoundSource.PLAYERS, 1.0F, 1.0F - (player.getRandom().nextFloat() - 0.5F) / 4);
     }
 
@@ -99,14 +99,14 @@ public class RevolverItem extends BulletOnlyGun {
                             player.getX(),
                             player.getY(),
                             player.getZ(),
-                            SoundReg.ITEM_REVOLVER_BULLET_INSERT,
+                            SoundReg.ITEM_REVOLVER_BULLET_INSERT.get(),
                             SoundSource.PLAYERS, 1.0F, 1.0F - (player.getRandom().nextFloat() - 0.5F) / 4);
                 } else if (player.tickCount % 5 == 0 && cooldownManager.isOnCooldown(stack.getItem())) {
                     player.level().playSound(null,
                             player.getX(),
                             player.getY(),
                             player.getZ(),
-                            SoundReg.ITEM_REVOLVER_SPINNING,
+                            SoundReg.ITEM_REVOLVER_SPINNING.get(),
                             SoundSource.PLAYERS, 1.0F, 1.0F - (player.getRandom().nextFloat() - 0.5F) / 4);
                 }
             }
