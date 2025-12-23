@@ -32,7 +32,7 @@ public class CasingParticle extends BaseAshSmokeParticle {
             if (!this.made_sound) {
                 this.made_sound = true;
 
-                this.level.playLocalSound(this.x, this.y, this.z, SoundReg.PARTICLE_CASING_BOUNCE, SoundSource.BLOCKS, 1.0F,1.0F - (this.level.getRandom().nextFloat() - 0.5F)/8, false);
+                this.level.playLocalSound(this.x, this.y, this.z, SoundReg.PARTICLE_CASING_BOUNCE.get(), SoundSource.BLOCKS, 1.0F,1.0F - (this.level.getRandom().nextFloat() - 0.5F)/8, false);
             }
         }
     }
