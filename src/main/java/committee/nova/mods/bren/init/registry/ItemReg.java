@@ -43,43 +43,43 @@ public class ItemReg {
 
     public static final RegistryObject<Item>MACHINE_GUN = item("machine_gun",  (s) -> new MachineGunItem(
             new Item.Properties(), Tiers.IRON, TagReg.MEDIUM_MAGAZINES, new GunProperties().rangedDamage(MACHINE_GUN_DAMAGE).fireRate(3).recoil(MACHINE_GUN_RECOIL)
-            .shootSound(SoundReg.ITEM_MACHINE_GUN_SHOOT, SoundReg.ITEM_MACHINE_GUN_SHOOT_SILENCED)));
+            .shootSound(SoundReg.ITEM_MACHINE_GUN_SHOOT.get(), SoundReg.ITEM_MACHINE_GUN_SHOOT_SILENCED.get())));
 
     public static final RegistryObject<Item>NETHERITE_MACHINE_GUN = item("netherite_machine_gun",  (s) -> new MachineGunItem(
             new Item.Properties().fireResistant(), Tiers.NETHERITE, TagReg.MEDIUM_MAGAZINES, new GunProperties().rangedDamage(N_MACHINE_GUN_DAMAGE).fireRate(3).recoil(MACHINE_GUN_RECOIL)
-            .shootSound(SoundReg.ITEM_MACHINE_GUN_SHOOT, SoundReg.ITEM_MACHINE_GUN_SHOOT_SILENCED)));
+            .shootSound(SoundReg.ITEM_MACHINE_GUN_SHOOT.get(), SoundReg.ITEM_MACHINE_GUN_SHOOT_SILENCED.get())));
 
     public static final RegistryObject<Item>AUTO_GUN = item("auto_gun", (s) ->  new GunWithMagItem(
             new Item.Properties(), Tiers.IRON, TagReg.MEDIUM_MAGAZINES, new GunProperties().rangedDamage(AUTO_GUN_DAMAGE).fireRate(5).recoil(AUTO_GUN_RECOIL)
-            .shootSound(SoundReg.ITEM_AUTO_GUN_SHOOT, SoundReg.ITEM_AUTO_GUN_SHOOT_SILENCED)));
+            .shootSound(SoundReg.ITEM_AUTO_GUN_SHOOT.get(), SoundReg.ITEM_AUTO_GUN_SHOOT_SILENCED.get())));
 
     public static final RegistryObject<Item>NETHERITE_AUTO_GUN = item("netherite_auto_gun",  (s) -> new GunWithMagItem(
             new Item.Properties().fireResistant(), Tiers.NETHERITE, TagReg.MEDIUM_MAGAZINES, new GunProperties().rangedDamage(N_AUTO_GUN_DAMAGE).fireRate(4).recoil(AUTO_GUN_RECOIL)
-            .shootSound(SoundReg.ITEM_AUTO_GUN_SHOOT, SoundReg.ITEM_AUTO_GUN_SHOOT_SILENCED)));
+            .shootSound(SoundReg.ITEM_AUTO_GUN_SHOOT.get(), SoundReg.ITEM_AUTO_GUN_SHOOT_SILENCED.get())));
 
     public static final RegistryObject<Item>RIFLE = item("rifle",  (s) -> new GunWithMagItem(
             new Item.Properties(), Tiers.IRON, TagReg.SHORT_MAGAZINES, new GunProperties().rangedDamage(RIFLE_DAMAGE).fireRate(20).recoil(RIFLE_RECOIL)
-            .shootSound(SoundReg.ITEM_RIFLE_SHOOT, SoundReg.ITEM_RIFLE_SHOOT_SILENCED)));
+            .shootSound(SoundReg.ITEM_RIFLE_SHOOT.get(), SoundReg.ITEM_RIFLE_SHOOT_SILENCED.get())));
 
     public static final RegistryObject<Item>NETHERITE_RIFLE = item("netherite_rifle",  (s) -> new GunWithMagItem(
             new Item.Properties().fireResistant(), Tiers.NETHERITE, TagReg.SHORT_MAGAZINES, new GunProperties().rangedDamage(N_RIFLE_DAMAGE).fireRate(20).recoil(RIFLE_RECOIL)
-            .shootSound(SoundReg.ITEM_RIFLE_SHOOT, SoundReg.ITEM_RIFLE_SHOOT_SILENCED)));
+            .shootSound(SoundReg.ITEM_RIFLE_SHOOT.get(), SoundReg.ITEM_RIFLE_SHOOT_SILENCED.get())));
 
     public static final RegistryObject<Item>SHOTGUN = item("shotgun",  (s) -> new ShotgunItem(
             new Item.Properties(), Tiers.IRON, new GunProperties().rangedDamage(SHOTGUN_DAMAGE).fireRate(20).recoil(SHOTGUN_RECOIL).bulletSpeed(1.8F)
-            .shootSound(SoundReg.ITEM_SHOTGUN_SHOOT, null)));
+            .shootSound(SoundReg.ITEM_SHOTGUN_SHOOT.get(), null)));
 
     public static final RegistryObject<Item>NETHERITE_SHOTGUN = item("netherite_shotgun",  (s) -> new ShotgunItem(
             new Item.Properties().fireResistant(), Tiers.NETHERITE, new GunProperties().rangedDamage(N_SHOTGUN_DAMAGE).fireRate(20).recoil(SHOTGUN_RECOIL).bulletSpeed(1.5F)
-            .shootSound(SoundReg.ITEM_SHOTGUN_SHOOT, null)));
+            .shootSound(SoundReg.ITEM_SHOTGUN_SHOOT.get(), null)));
 
     public static final RegistryObject<Item>REVOLVER = item("revolver",  (s) -> new RevolverItem(
             new Item.Properties(), Tiers.IRON, new GunProperties().rangedDamage(REVOLVER_DAMAGE).fireRate(15).recoil(REVOLVER_RECOIL)
-            .shootSound(SoundReg.ITEM_REVOLVER_SHOOT, null)));
+            .shootSound(SoundReg.ITEM_REVOLVER_SHOOT.get(), null)));
 
     public static final RegistryObject<Item>NETHERITE_REVOLVER = item("netherite_revolver", (s) ->  new RevolverItem(
             new Item.Properties().fireResistant(), Tiers.NETHERITE, new GunProperties().rangedDamage(N_REVOLVER_DAMAGE).fireRate(15).recoil(REVOLVER_RECOIL)
-            .shootSound(SoundReg.ITEM_REVOLVER_SHOOT, null)));
+            .shootSound(SoundReg.ITEM_REVOLVER_SHOOT.get(), null)));
 
     public static final RegistryObject<Item>MAGAZINE = item("magazine",  (s) -> new MagazineItem(new Item.Properties(), 20));
     public static final RegistryObject<Item>CLOTHED_MAGAZINE = item("clothed_magazine",  (s) -> new ColorableMagazineItem(new Item.Properties(), 20));
