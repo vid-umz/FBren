@@ -32,6 +32,7 @@ public class Bren {
         AttributeReg.ATTRIBUTES.register(bus);
         BlockReg.BLOCKS.register(bus);
         ItemReg.ITEMS.register(bus);
+		SoundReg.register(bus);
         TabReg.TABS.register(bus);
         ParticleReg.PARTICLE_TYPE.register(bus);
         EnchantmentReg.ENCHANTMENTS.register(bus);
